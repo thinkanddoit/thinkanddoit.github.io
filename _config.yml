@@ -12,9 +12,9 @@ description: ''
 baseurl:     '' # The subpath of your site, e.g. /blog
 url:         'https://thinkanddoit.github.io/' # The base hostname & protocol for your site
 twitter:     ''
-github:      'thinkanddoit'
-instagram:   'easyone_easyone'
-facebook:    'easyone97'
+github:      'https://github.com/thinkanddoit'
+instagram:   'https://www.instagram.com/easyone_easyone/'
+facebook:    'https://www.facebook.com/easyone97'
 
 markdown:  kramdown
 permalink: pretty

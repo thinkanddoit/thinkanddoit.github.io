@@ -1,0 +1,31 @@
+---
+layout: post
+title: 알고리즘 공부(Stack)
+tags: [frontpage, jekyll, blog]
+image: '/images/posts/stack.jpg'
+---
+
+자료구조에서 배운 구조 중 "스택(Stack)"에 관련된 알고리즘 문제를 해결하였다.
+[백준 10828번] (https://www.acmicpc.net/problem/10828)
+
+위 문제는 꽤 간단한 stack의 기본구조에 관한 문제였지만 해결하는데 조금의 어려움이 있었다.
+우선 오랜만에 java언어를 사용하였고 입력과 출력을 제어하는데 어려움이 있었다.
+
+##### 스택(Stack)
+
+![alt](http://bluegalaxy.info/codewalk/wp-content/uploads/2018/08/stack.jpg)
+
+스택(Stack)은 Last In First Out(LIFO) 후입선출 구조 이다.
+입력과 출력을 하는 부분이 동일 하기 때문에 마지막에 입력된 값이 먼저 나오게 되는 자료구조이다.
+한쪽이 막혀있는 빈 원통구조를 스택(Stack)이라고 이해하면 보다 쉬울것 같다.
+
+스택에서 존재하는 연산을 살펴보면
+
+1. top()
+  스택의 가장 윗 데이터를 반환한다.
+2. pop()
+  스택의 가장 윗 데이터를 반환하고 해당 데이터를 삭제한다.
+3. push()
+  스택에 새로운 데이터를 입력한다.
+4. empty()
+  스택이 비었다면 참, 아니면 거짓인값을 반환한다.

@@ -6,7 +6,7 @@ image: '/images/posts/stack.jpg'
 ---
 
 자료구조에서 배운 구조 중 "스택(Stack)"에 관련된 알고리즘 문제를 해결하였다.
-[백준 10828번] (https://www.acmicpc.net/problem/10828)
+<a href="https://www.acmicpc.net/problem/10828">[백준 10828번]</a>
 
 위 문제는 꽤 간단한 stack의 기본구조에 관한 문제였지만 해결하는데 조금의 어려움이 있었다.
 우선 오랜만에 java언어를 사용하였고 입력과 출력을 제어하는데 어려움이 있었다.

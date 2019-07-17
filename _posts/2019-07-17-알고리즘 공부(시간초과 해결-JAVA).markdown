@@ -12,7 +12,7 @@ Stack 관련된 문제를 풀다가 어려움에 직면하였다.<br>
 <a href="https://www.acmicpc.net/problem/1874">[백준 1874번]</a><br>
 
 <details>
-<summary>해결 방법</summary>
+<summary>해결 코드(click)</summary>
 <div markdown="1">
 
 <pre>
@@ -102,16 +102,16 @@ class stack {
 </pre>
 
 </div>
-</details>
+</details><br>
 
-이와 관련해서 다른 사람들도 비슷한 문제로 해결을 못하는 것을 파악했고
-질문에 달린 답변들을 관찰하다가 입출력의 방식에 따라 시간초과가 날수있다는 사실을 알수 있었다.
+이와 관련해서 다른 사람들도 비슷한 문제로 해결을 못하는 것을 파악했고<br>
+질문에 달린 답변들을 관찰하다가 입출력의 방식에 따라 **"시간초과"** 가 일어날 수있다는 사실을 알수 있었다.<br>
 이와 관련된 백준 문제는
 
 <a href="https://www.acmicpc.net/problem/15552">[백준 15552번]</a>
 
 
-### JAVA - Scanner를 통한 입출력
+### JAVA - Scanner를 통한 입출력으로 해결
 
 > <pre>
 > import java.util.Scanner;
@@ -136,7 +136,7 @@ class stack {
 ![timout1](/images/posts/timeout1.jpg)
 
 
-### JAVA - BufferedReader, BufferedWriter 를 통한 입출력
+### JAVA - BufferedReader, BufferedWriter 를 통한 입출력으로 해결
 
 > <pre>
 > import java.io.*;
@@ -165,3 +165,15 @@ class stack {
 ##### 결과
 
 ![timout2](/images/posts/timeout2.jpg)
+
+
+## Scanner 과 BufferedReader의 차이
+[https://stackoverflow.com/questions/2231369/scanner-vs-bufferedreader](https://stackoverflow.com/questions/2231369/scanner-vs-bufferedreader)
+
+위 사이트에 들어가 보면 두가지방식의 차이가 자세히 설명되어있다.
+
+하지만 이번 문제푸는 과정을 통해서 알게된 가장 중요한 차이점은 
+
+<span style="color:red">**큰 크기의 자료를 다룰때는 속도가 현저히 빠른 buffer를 사용하라는 것**</span> 이다.
+
+

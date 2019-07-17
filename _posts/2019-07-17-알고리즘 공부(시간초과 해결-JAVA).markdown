@@ -5,11 +5,104 @@ tags: [frontpage, jekyll, blog]
 image: '/images/posts/timeout.jpg'
 ---
 
-Stack 관련된 문제를 풀다가 어려움에 직면하였다.
+Stack 관련된 문제를 풀다가 어려움에 직면하였다.<br>
 문제에 주어진 예제는 모두 해결하는 알고리즘을 짰으나 문제에서 요구하는 제한시간을 통과하지 못하였다.
 아직도 해결하지 못해서 내 정신상태가 이상해지는 것 같다.
 
-<a href="https://www.acmicpc.net/problem/1874">[백준 1874번]</a>
+<a href="https://www.acmicpc.net/problem/1874">[백준 1874번]</a><br>
+
+<details>
+<summary>해결 방법</summary>
+<div markdown="1">
+
+<pre>
+import java.io.*;
+
+public class Main {
+	public static void main(String[] args) throws IOException {
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		StringBuilder sb = new StringBuilder();
+		int k = 1;
+
+		int number = Integer.parseInt(br.readLine());
+		int[] inputNumber = new int[number];
+		stack s = new stack(number);
+
+		int n = 1;
+		for (int i = 0; i < number;) {
+			int input = Integer.parseInt(br.readLine());
+
+			if (n <= input) {
+				while (n <= input) {
+					s.push(n);
+					sb.append("+\n");
+					n++;
+				}
+				if (s.top() == input) {
+					s.pop();
+					sb.append("-\n");
+					i++;
+				}
+			} else if (n > input) {
+				if (s.top() == input) {
+					s.pop();
+					sb.append("-\n");
+					i++;
+				} else {
+					k = 0;
+					bw.write("NO");
+					bw.flush();
+					bw.close();
+					break;
+				}
+			}
+		}
+
+		if (k == 1) {
+			bw.write(sb.toString());
+			bw.flush();
+			bw.close();
+		}
+	}
+}
+
+class stack {
+	int[] stack;
+	int size = 0;
+
+	public stack(int n) {
+		stack = new int[n];
+	}
+
+	void push(int x) {
+		stack[size++] = x;
+	}
+
+	int pop() {
+		return stack[--size];
+	}
+
+	int top() {
+		return stack[size - 1];
+	}
+
+	int size() {
+		return size;
+	}
+
+	int empty() {
+		if (size == 0)
+			return 1;
+		else
+			return 0;
+	}
+}
+</pre>
+
+</div>
+</details>
 
 이와 관련해서 다른 사람들도 비슷한 문제로 해결을 못하는 것을 파악했고
 질문에 달린 답변들을 관찰하다가 입출력의 방식에 따라 시간초과가 날수있다는 사실을 알수 있었다.

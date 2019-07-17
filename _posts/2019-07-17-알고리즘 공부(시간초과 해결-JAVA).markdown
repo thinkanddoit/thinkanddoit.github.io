@@ -18,7 +18,7 @@ Stack 관련된 문제를 풀다가 어려움에 직면하였다.
 <a href="https://www.acmicpc.net/problem/15552">[백준 15552번]</a>
 
 
-##### JAVA - Scanner를 통한 입출력
+### JAVA - Scanner를 통한 입출력
 
 > <pre>
 > import java.util.Scanner;
@@ -37,13 +37,13 @@ Stack 관련된 문제를 풀다가 어려움에 직면하였다.
 > }
 > </pre>
 
-#####결과
+##### 결과
 
 
 ![timout1](/images/posts/timeout1.jpg)
 
 
-##### JAVA - BufferedReader, BufferedWriter 를 통한 입출력
+### JAVA - BufferedReader, BufferedWriter 를 통한 입출력
 
 > <pre>
 > import java.io.*;
@@ -69,6 +69,6 @@ Stack 관련된 문제를 풀다가 어려움에 직면하였다.
 > </pre>
 
 
-###결과
+##### 결과
 
 ![timout2](/images/posts/timeout2.jpg)

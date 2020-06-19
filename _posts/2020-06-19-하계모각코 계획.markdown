@@ -1,0 +1,24 @@
+---
+layout: post
+title: 하계모각코 계획
+tags: [frontpage, jekyll, blog]
+image: '/images/posts/mogacoo.jpg'
+---
+
+1번쨰
+JavaScript 복습
+
+2번째
+React 기본 개념
+
+3번째
+React Hook
+
+4번째
+기존 React파일을 Hook으로 전환
+
+5번째
+React-native
+
+6번째
+React-native로 간단한 app만들어보기

@@ -10,8 +10,17 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: checkout dev
-        run: checkout dev
+      - name: yarn install
+        run: yarn install
+
+      - name: gatsby build
+        env:
+          GH_API_KEY: ${{ secrets.REPO_KEY }}
+        run: yarn build
 
       - name: deploy
-        run: npm run deploy
+        uses: maxheld83/ghpages@v0.2.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.REPO_KEY }}
+          BUILD_DIR: 'public/'

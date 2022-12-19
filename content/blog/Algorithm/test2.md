@@ -5,4 +5,4 @@ category: 'Algorithm'
 draft: false
 ---
 
-Test2
+ci/cd test 중입니다.

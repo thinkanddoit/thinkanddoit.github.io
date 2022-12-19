@@ -1,0 +1,34 @@
+on:
+  push:
+    branches:
+      - dev
+name: build gatsby
+jobs:
+  build_gatsby:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+
+      - name: Setup SSH Keys and known_hosts
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+          ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
+
+      - name: set git name and email
+        run: |
+          git config --global user.email "thinkanddoit@naver.com"
+          git config --global user.name "easyone"
+
+      - name: npm install
+        run: npm install
+
+      - name: gatsby build and deploy
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: npm run deploy

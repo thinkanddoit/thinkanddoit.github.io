@@ -63,6 +63,7 @@ export const Bio = forwardRef((props, ref) => {
                         LinkedIn
                       </a>
                     )}
+                    <a href={'/about'}>Resume</a>
                   </p>
                 </div>
               </div>

@@ -1,8 +1,8 @@
 module.exports = {
-  title: `경험주의 개발자 이지원`,
+  title: `Easyone의 기술블로그`,
   description: `경험하는 기술에 대해서 그리고 오늘 일에 대해서 기록합니다.`,
   author: `thinkanddoit`,
-  introduction: `경험하는 것을 좋아하는, 함께 성장하는 것을 좋아하는, 꾸준히 성장하는 프론트엔드 개발자 이지원입니다.`,
+  introduction: `🍎 경험주의자 입니다.\n 🙋🏻‍♂️ 함께 성장하는 것을 좋아합니다.\n 📈 꾸준히 성장하기 위한 습관을 들입니다.\n 🤔 프로세스 고도화에 관심이 있습니다.\n 🗣 스몰톡을 좋아합니다.\n ☕️ 커피를 좋아합니다.\n ⚽️ 축구를 좋아합니다.\n`,
   siteUrl: `https://thinkanddoit.github.io/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account

@@ -24,7 +24,9 @@ export const Bio = forwardRef((props, ref) => {
                   }}
                 />
                 <div className="author-name">
-                  <span className="author-name-prefix">Written by</span>
+                  <span className="author-name-prefix">
+                    프론트엔드 개발자 이지원입니다.
+                  </span>
                   <Link to={'/about'} className="author-name-content">
                     <span>@{author}</span>
                   </Link>

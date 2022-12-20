@@ -7,6 +7,7 @@ module.exports = {
   social: {
     twitter: ``, // Your Twitter account
     github: `thinkanddoit`, // Your GitHub account
+    velog: `thinkanddoit`,
     medium: ``, // Your Medium account
     facebook: ``, // Your Facebook account
     linkedin: ``, // Your LinkedIn account

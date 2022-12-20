@@ -50,6 +50,9 @@ body.light {
     p {
       color: $middle-gray;
     }
+    .date {
+      color: $light-gray;
+    }
     &:hover {
       text-shadow: $light-hover-text-shadow;
     }

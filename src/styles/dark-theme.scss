@@ -51,6 +51,9 @@ body.dark {
     p {
       color: $dark-middle-font-color;
     }
+    .date {
+      color: $dark-middle-font-color;
+    }
     &:hover {
       text-shadow: $dark-hover-text-shadow;
     }

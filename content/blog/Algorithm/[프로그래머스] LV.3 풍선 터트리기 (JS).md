@@ -1,5 +1,5 @@
 ---
-title: 풍선 터트리기
+title: '[프로그래머스] LV.3 풍선 터트리기 (JS)'
 date: 2022-12-20 14:12:52
 category: algorithm
 thumbnail: { thumbnailSrc }

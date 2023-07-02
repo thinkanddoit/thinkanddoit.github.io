@@ -64,181 +64,165 @@
       
       
       
-      }</script><link rel="icon" href="/icons/icon-48x48.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><title data-react-helmet="true">CSR vs SSR vs SSG 차이 정리 | Easyone의 기술블로그</title><meta data-react-helmet="true" name="description" content="CSR vs SSR vs SSG 정리하기 CSR vs SSR vs SSG 웹 페이지를 렌더링하는방식 Client Side Rendering (CSR) 클라이언트(브라우저)에서 웹 페이지를 렌더링 하는 것. TTI === TTV 모든 로직, 데이터 가져오기, 템플릿, 라우팅은 서버가 아닌 클라이언트에서 처리 CSR은 js번들 크기의 영향을 많이 받아서 적극적  을 고려해야한다. (FCP최적화, TTI최적화) *FCP(First Contentful Paint) - 첫 유용한 콘텐츠 *FP(First…"/><meta data-react-helmet="true" property="og:title" content="CSR vs SSR vs SSG 차이 정리"/><meta data-react-helmet="true" property="og:description" content="CSR vs SSR vs SSG 정리하기 CSR vs SSR vs SSG 웹 페이지를 렌더링하는방식 Client Side Rendering (CSR) 클라이언트(브라우저)에서 웹 페이지를 렌더링 하는 것. TTI === TTV 모든 로직, 데이터 가져오기, 템플릿, 라우팅은 서버가 아닌 클라이언트에서 처리 CSR은 js번들 크기의 영향을 많이 받아서 적극적  을 고려해야한다. (FCP최적화, TTI최적화) *FCP(First Contentful Paint) - 첫 유용한 콘텐츠 *FP(First…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator" content="thinkanddoit"/><meta data-react-helmet="true" name="twitter:title" content="CSR vs SSR vs SSG 차이 정리"/><meta data-react-helmet="true" name="twitter:description" content="CSR vs SSR vs SSG 정리하기 CSR vs SSR vs SSG 웹 페이지를 렌더링하는방식 Client Side Rendering (CSR) 클라이언트(브라우저)에서 웹 페이지를 렌더링 하는 것. TTI === TTV 모든 로직, 데이터 가져오기, 템플릿, 라우팅은 서버가 아닌 클라이언트에서 처리 CSR은 js번들 크기의 영향을 많이 받아서 적극적  을 고려해야한다. (FCP최적화, TTI최적화) *FCP(First Contentful Paint) - 첫 유용한 콘텐츠 *FP(First…"/><meta data-react-helmet="true" name="google-site-verification" content="DtX9GdTBmX3u5ALnNxOQAGlcwRBgDtkCUO-zdbD11oI"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/webpack-runtime-f1c6ea257a164567f6d9.js"/><link as="script" rel="preload" href="/framework-727eca7a674e10b21a9f.js"/><link as="script" rel="preload" href="/app-10ab6ae954fcc3dc18b2.js"/><link as="script" rel="preload" href="/styles-9605c3fbd8ad08ecf405.js"/><link as="script" rel="preload" href="/428cc97b99dda93b6f894a0194db3c3a0ab8bbd5-b9cdbc495dc2d8ef3640.js"/><link as="script" rel="preload" href="/4213a708e3c149581c4f5e97d71bfc3d00067ec6-fb3977cb0c11110241b5.js"/><link as="script" rel="preload" href="/69ca9dfa785447e3d8b116b383997bcdc8df623a-d6afe8c09a88c9bf3650.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-ea37a1edbda4c4f8e378.js"/><link as="fetch" rel="preload" href="/page-data/글또/csr-vs-ssr-vs-ssg-차이-정리/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="top"><a class="link" href="/">Easyone의 기술블로그</a><a href="https://github.com/thinkanddoit" class="github" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg></a></div><div style="margin-left:auto;margin-right:auto;max-width:48.75rem;padding:2.4375rem 1.21875rem"><div class="switch-container"><label for="normal-switch"><div style="position:relative;display:inline-block;text-align:left;opacity:1;direction:ltr;border-radius:12px;-webkit-transition:opacity 0.25s;-moz-transition:opacity 0.25s;transition:opacity 0.25s;touch-action:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none"><div class="react-switch-bg" style="height:24px;width:48px;margin:0;position:relative;background:#d9dfe2;border-radius:12px;cursor:pointer;-webkit-transition:background 0.25s;-moz-transition:background 0.25s;transition:background 0.25s"><div style="height:24px;width:26px;position:relative;opacity:0;pointer-events:none;-webkit-transition:opacity 0.25s;-moz-transition:opacity 0.25s;transition:opacity 0.25s"><div class="icon checkedIcon"><svg width="24" height="24"><rect width="24" height="24" fill="none" rx="0" ry="0"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M14.8102 3.2H13.8202C13.4902 3.2 13.2302 2.93 13.2302 2.6C13.2302 2.27 13.5002 2 13.8302 2H16.2602C16.5002 2 16.7202 2.15 16.8102 2.37C16.9002 2.59 16.8502 2.85 16.6802 3.02L15.2702 4.43H16.2602C16.5902 4.43 16.8602 4.7 16.8602 5.03C16.8602 5.36 16.5902 5.63 16.2602 5.63H13.8202C13.5802 5.63 13.3602 5.48 13.2702 5.26C13.1802 5.04 13.2302 4.78 13.4002 4.61L14.8102 3.2ZM20.1401 11.0101H21.1301C21.4601 11.0101 21.7401 11.2801 21.7401 11.6101C21.7401 11.9401 21.4701 12.2101 21.1401 12.2101H18.7001C18.4601 12.2101 18.2401 12.0601 18.1501 11.8401C18.0601 11.6201 18.1101 11.3601 18.2801 11.1901L19.6901 9.78008H18.7001C18.3701 9.78008 18.1001 9.51008 18.1001 9.18008C18.1001 8.85008 18.3701 8.58008 18.7001 8.58008H21.1301C21.3701 8.58008 21.5901 8.73008 21.6801 8.95008C21.7701 9.17008 21.7201 9.43008 21.5501 9.60008L20.1401 11.0101ZM11.0302 9.8499H12.8502L10.7002 11.9999C10.5302 12.1699 10.4802 12.4299 10.5702 12.6499C10.6602 12.8699 10.8802 13.0199 11.1202 13.0199H14.2902C14.6202 13.0199 14.8902 12.7499 14.8902 12.4199C14.8902 12.0899 14.6202 11.8199 14.2902 11.8199H12.5602L14.7102 9.6699C14.8802 9.4999 14.9302 9.2399 14.8402 9.0199C14.7502 8.7999 14.5302 8.6499 14.2902 8.6499H11.0202C10.6902 8.6499 10.4202 8.9199 10.4202 9.2499C10.4202 9.5799 10.7002 9.8499 11.0302 9.8499ZM14.5501 16.89C15.6601 16.89 16.7201 16.66 17.7101 16.19C17.9401 16.08 18.2101 16.13 18.3801 16.3C18.5601 16.48 18.6101 16.75 18.5001 16.98C17.0901 20.05 13.9901 22.03 10.6001 22.03C5.79013 22.03 1.88013 18.12 1.88013 13.31C1.88013 9.94004 3.87013 6.84004 6.93013 5.40004C7.16013 5.29004 7.43012 5.34004 7.61012 5.52004C7.79012 5.70004 7.84013 5.97004 7.73013 6.20004C7.27013 7.19004 7.03012 8.26004 7.03012 9.38004C7.03012 13.52 10.4001 16.89 14.5501 16.89ZM3.09013 13.31C3.09013 17.46 6.46012 20.83 10.6101 20.83C12.9901 20.83 15.2001 19.7 16.6001 17.85C15.9401 18.01 15.2501 18.09 14.5501 18.09C9.74013 18.09 5.83012 14.18 5.83012 9.38004C5.83012 8.68004 5.91013 7.99004 6.07013 7.32004C4.22013 8.73004 3.09013 10.94 3.09013 13.31Z"></path></svg></div></div><div style="height:24px;width:26px;position:absolute;opacity:1;right:0;top:0;pointer-events:none;-webkit-transition:opacity 0.25s;-moz-transition:opacity 0.25s;transition:opacity 0.25s"><div class="icon uncheckedIcon"><svg width="24" height="24"><rect width="24" height="24" fill="none" rx="0" ry="0"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7488 5.67224C13.1057 5.67298 13.3958 5.38416 13.3965 5.0271C13.3973 4.67005 13.1084 4.37989 12.7515 4.37915C12.3943 4.37842 12.1043 4.66724 12.1035 5.02442C12.1028 5.38135 12.3916 5.67151 12.7488 5.67224ZM9.39535 6.57153C9.70504 6.39355 9.81173 5.99841 9.63388 5.68884C9.45602 5.37914 9.06076 5.27245 8.75119 5.45031C8.44162 5.62817 8.3348 6.02343 8.51266 6.333C8.69064 6.64257 9.08578 6.74926 9.39535 6.57153ZM6.94091 9.02688C6.76171 9.33571 6.3662 9.44094 6.05736 9.26174C5.74852 9.08254 5.6433 8.68691 5.8225 8.37807C6.0017 8.06923 6.39733 7.96413 6.70617 8.14333C7.015 8.32253 7.12011 8.71804 6.94091 9.02688ZM6.04309 12.3806C6.04383 12.0234 5.75501 11.7334 5.39795 11.7327C5.0409 11.7319 4.75074 12.0208 4.75 12.3779C4.74927 12.7349 5.03809 13.0249 5.39527 13.0256C5.7522 13.0265 6.04236 12.7376 6.04309 12.3806ZM5.82116 16.3781C5.6433 16.0684 5.74999 15.6734 6.05968 15.4954C6.36925 15.3176 6.7644 15.4244 6.94237 15.734C7.12023 16.0435 7.01342 16.4388 6.70385 16.6165C6.39428 16.7945 5.99902 16.6877 5.82116 16.3781ZM9.39773 18.1882C9.08889 18.0091 8.69338 18.1142 8.51418 18.423C8.33498 18.7319 8.44008 19.1275 8.74892 19.3067C9.05776 19.4858 9.45339 19.3808 9.63259 19.072C9.81179 18.7631 9.70656 18.3674 9.39773 18.1882ZM12.1035 19.7313C12.1043 19.3743 12.3943 19.0855 12.7515 19.0862C13.1084 19.0869 13.3973 19.377 13.3965 19.7341C13.3958 20.0911 13.1057 20.3799 12.7488 20.3792C12.3916 20.3784 12.1028 20.0884 12.1035 19.7313ZM16.1047 18.1869C15.7951 18.3647 15.6883 18.7599 15.8662 19.0695C16.0442 19.3791 16.4392 19.4859 16.7489 19.308C17.0584 19.1302 17.1652 18.735 16.9873 18.4255C16.8095 18.1158 16.4143 18.009 16.1047 18.1869ZM18.559 15.7315C18.7382 15.4227 19.134 15.3177 19.4428 15.4969C19.7516 15.676 19.8566 16.0716 19.6775 16.3804C19.4983 16.6893 19.1027 16.7945 18.7939 16.6153C18.485 16.4361 18.3799 16.0403 18.559 15.7315ZM20.105 11.7327C19.7478 11.7319 19.4578 12.0208 19.457 12.3779C19.4563 12.7349 19.7451 13.0249 20.1022 13.0256C20.4592 13.0265 20.7493 12.7376 20.75 12.3806C20.7507 12.0234 20.4619 11.7334 20.105 11.7327ZM19.679 8.38046C19.8569 8.69003 19.75 9.08529 19.4405 9.26315C19.1309 9.44101 18.7356 9.33432 18.5579 9.02462C18.3799 8.71505 18.4867 8.31991 18.7964 8.14193C19.106 7.96408 19.5011 8.07089 19.679 8.38046ZM16.1022 6.57006C16.4111 6.74926 16.8068 6.64415 16.986 6.33532C17.1652 6.02648 17.06 5.63085 16.7512 5.45165C16.4423 5.27245 16.0467 5.37767 15.8676 5.68651C15.6884 5.99535 15.7934 6.39086 16.1022 6.57006ZM8.26319 12.3795C8.26319 9.90466 10.2761 7.8916 12.75 7.8916C15.2249 7.8916 17.2379 9.90466 17.2379 12.3795C17.2379 14.8534 15.2249 16.8663 12.75 16.8663C10.2761 16.8663 8.26319 14.8534 8.26319 12.3795ZM9.5553 12.3795C9.5553 14.141 10.9885 15.5741 12.75 15.5741C14.5115 15.5741 15.9458 14.141 15.9458 12.3795C15.9458 10.618 14.5115 9.18372 12.75 9.18372C10.9885 9.18372 9.5553 10.618 9.5553 12.3795Z"></path></svg></div></div></div><div class="react-switch-handle" style="height:22px;width:22px;background:#ffffff;display:inline-block;cursor:pointer;border-radius:50%;position:absolute;transform:translateX(1px);top:1px;outline:0;border:0;-webkit-transition:background-color 0.25s, transform 0.25s, box-shadow 0.15s;-moz-transition:background-color 0.25s, transform 0.25s, box-shadow 0.15s;transition:background-color 0.25s, transform 0.25s, box-shadow 0.15s"></div><input type="checkbox" role="switch" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px" id="normal-switch"/></div></label></div><h1>CSR vs SSR vs SSG 차이 정리</h1><p class="post-date">June 18, 2023</p><div><p><a href="https://ajdkfl6445.gitbook.io/study/web/csr-vs-ssr-vs-ssg">CSR vs SSR vs SSG</a></p>
-<p>정리하기</p>
-<h2 id="csr-vs-ssr-vs-ssg" style="position:relative;"><a href="#csr-vs-ssr-vs-ssg" aria-label="csr vs ssr vs ssg permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>CSR vs SSR vs SSG</h2>
+      }</script><link rel="icon" href="/icons/icon-48x48.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=d785e87462519aef6f5110f35e978e6d"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><title data-react-helmet="true">프론트엔드 개발환경 세팅(1) | Easyone의 기술블로그</title><meta data-react-helmet="true" name="description" content="일지#1 1주 : 이전 강의 정리포스팅, 계획, 섹션0, 섹션1 라이브러리, 프레임워크에서는 편한방식의 스타트 환경을 제공한다 (CRA, Vue cli) 하지만 이런 환경구성을 아는 것 vs 모르는 것 차이가 있음 유능한 프로그래머가 되기 위해 직접 도구를 다루는 법을 배울 예정 이론 → 실습 (11개의 실습 꼭 따라하기) 오늘 한 것 node.js 설치 npm 설치 npm init pakage.json 확인 scripts…"/><meta data-react-helmet="true" property="og:title" content="프론트엔드 개발환경 세팅(1)"/><meta data-react-helmet="true" property="og:description" content="일지#1 1주 : 이전 강의 정리포스팅, 계획, 섹션0, 섹션1 라이브러리, 프레임워크에서는 편한방식의 스타트 환경을 제공한다 (CRA, Vue cli) 하지만 이런 환경구성을 아는 것 vs 모르는 것 차이가 있음 유능한 프로그래머가 되기 위해 직접 도구를 다루는 법을 배울 예정 이론 → 실습 (11개의 실습 꼭 따라하기) 오늘 한 것 node.js 설치 npm 설치 npm init pakage.json 확인 scripts…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator" content="thinkanddoit"/><meta data-react-helmet="true" name="twitter:title" content="프론트엔드 개발환경 세팅(1)"/><meta data-react-helmet="true" name="twitter:description" content="일지#1 1주 : 이전 강의 정리포스팅, 계획, 섹션0, 섹션1 라이브러리, 프레임워크에서는 편한방식의 스타트 환경을 제공한다 (CRA, Vue cli) 하지만 이런 환경구성을 아는 것 vs 모르는 것 차이가 있음 유능한 프로그래머가 되기 위해 직접 도구를 다루는 법을 배울 예정 이론 → 실습 (11개의 실습 꼭 따라하기) 오늘 한 것 node.js 설치 npm 설치 npm init pakage.json 확인 scripts…"/><meta data-react-helmet="true" name="google-site-verification" content="DtX9GdTBmX3u5ALnNxOQAGlcwRBgDtkCUO-zdbD11oI"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/webpack-runtime-f1c6ea257a164567f6d9.js"/><link as="script" rel="preload" href="/framework-727eca7a674e10b21a9f.js"/><link as="script" rel="preload" href="/app-10ab6ae954fcc3dc18b2.js"/><link as="script" rel="preload" href="/styles-9605c3fbd8ad08ecf405.js"/><link as="script" rel="preload" href="/428cc97b99dda93b6f894a0194db3c3a0ab8bbd5-b9cdbc495dc2d8ef3640.js"/><link as="script" rel="preload" href="/4213a708e3c149581c4f5e97d71bfc3d00067ec6-fb3977cb0c11110241b5.js"/><link as="script" rel="preload" href="/69ca9dfa785447e3d8b116b383997bcdc8df623a-d6afe8c09a88c9bf3650.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-ea37a1edbda4c4f8e378.js"/><link as="fetch" rel="preload" href="/page-data/글또/프론트엔드-개발환경-세팅(1)/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="top"><a class="link" href="/">Easyone의 기술블로그</a><a href="https://github.com/thinkanddoit" class="github" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg></a></div><div style="margin-left:auto;margin-right:auto;max-width:48.75rem;padding:2.4375rem 1.21875rem"><div class="switch-container"><label for="normal-switch"><div style="position:relative;display:inline-block;text-align:left;opacity:1;direction:ltr;border-radius:12px;-webkit-transition:opacity 0.25s;-moz-transition:opacity 0.25s;transition:opacity 0.25s;touch-action:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none"><div class="react-switch-bg" style="height:24px;width:48px;margin:0;position:relative;background:#d9dfe2;border-radius:12px;cursor:pointer;-webkit-transition:background 0.25s;-moz-transition:background 0.25s;transition:background 0.25s"><div style="height:24px;width:26px;position:relative;opacity:0;pointer-events:none;-webkit-transition:opacity 0.25s;-moz-transition:opacity 0.25s;transition:opacity 0.25s"><div class="icon checkedIcon"><svg width="24" height="24"><rect width="24" height="24" fill="none" rx="0" ry="0"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M14.8102 3.2H13.8202C13.4902 3.2 13.2302 2.93 13.2302 2.6C13.2302 2.27 13.5002 2 13.8302 2H16.2602C16.5002 2 16.7202 2.15 16.8102 2.37C16.9002 2.59 16.8502 2.85 16.6802 3.02L15.2702 4.43H16.2602C16.5902 4.43 16.8602 4.7 16.8602 5.03C16.8602 5.36 16.5902 5.63 16.2602 5.63H13.8202C13.5802 5.63 13.3602 5.48 13.2702 5.26C13.1802 5.04 13.2302 4.78 13.4002 4.61L14.8102 3.2ZM20.1401 11.0101H21.1301C21.4601 11.0101 21.7401 11.2801 21.7401 11.6101C21.7401 11.9401 21.4701 12.2101 21.1401 12.2101H18.7001C18.4601 12.2101 18.2401 12.0601 18.1501 11.8401C18.0601 11.6201 18.1101 11.3601 18.2801 11.1901L19.6901 9.78008H18.7001C18.3701 9.78008 18.1001 9.51008 18.1001 9.18008C18.1001 8.85008 18.3701 8.58008 18.7001 8.58008H21.1301C21.3701 8.58008 21.5901 8.73008 21.6801 8.95008C21.7701 9.17008 21.7201 9.43008 21.5501 9.60008L20.1401 11.0101ZM11.0302 9.8499H12.8502L10.7002 11.9999C10.5302 12.1699 10.4802 12.4299 10.5702 12.6499C10.6602 12.8699 10.8802 13.0199 11.1202 13.0199H14.2902C14.6202 13.0199 14.8902 12.7499 14.8902 12.4199C14.8902 12.0899 14.6202 11.8199 14.2902 11.8199H12.5602L14.7102 9.6699C14.8802 9.4999 14.9302 9.2399 14.8402 9.0199C14.7502 8.7999 14.5302 8.6499 14.2902 8.6499H11.0202C10.6902 8.6499 10.4202 8.9199 10.4202 9.2499C10.4202 9.5799 10.7002 9.8499 11.0302 9.8499ZM14.5501 16.89C15.6601 16.89 16.7201 16.66 17.7101 16.19C17.9401 16.08 18.2101 16.13 18.3801 16.3C18.5601 16.48 18.6101 16.75 18.5001 16.98C17.0901 20.05 13.9901 22.03 10.6001 22.03C5.79013 22.03 1.88013 18.12 1.88013 13.31C1.88013 9.94004 3.87013 6.84004 6.93013 5.40004C7.16013 5.29004 7.43012 5.34004 7.61012 5.52004C7.79012 5.70004 7.84013 5.97004 7.73013 6.20004C7.27013 7.19004 7.03012 8.26004 7.03012 9.38004C7.03012 13.52 10.4001 16.89 14.5501 16.89ZM3.09013 13.31C3.09013 17.46 6.46012 20.83 10.6101 20.83C12.9901 20.83 15.2001 19.7 16.6001 17.85C15.9401 18.01 15.2501 18.09 14.5501 18.09C9.74013 18.09 5.83012 14.18 5.83012 9.38004C5.83012 8.68004 5.91013 7.99004 6.07013 7.32004C4.22013 8.73004 3.09013 10.94 3.09013 13.31Z"></path></svg></div></div><div style="height:24px;width:26px;position:absolute;opacity:1;right:0;top:0;pointer-events:none;-webkit-transition:opacity 0.25s;-moz-transition:opacity 0.25s;transition:opacity 0.25s"><div class="icon uncheckedIcon"><svg width="24" height="24"><rect width="24" height="24" fill="none" rx="0" ry="0"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7488 5.67224C13.1057 5.67298 13.3958 5.38416 13.3965 5.0271C13.3973 4.67005 13.1084 4.37989 12.7515 4.37915C12.3943 4.37842 12.1043 4.66724 12.1035 5.02442C12.1028 5.38135 12.3916 5.67151 12.7488 5.67224ZM9.39535 6.57153C9.70504 6.39355 9.81173 5.99841 9.63388 5.68884C9.45602 5.37914 9.06076 5.27245 8.75119 5.45031C8.44162 5.62817 8.3348 6.02343 8.51266 6.333C8.69064 6.64257 9.08578 6.74926 9.39535 6.57153ZM6.94091 9.02688C6.76171 9.33571 6.3662 9.44094 6.05736 9.26174C5.74852 9.08254 5.6433 8.68691 5.8225 8.37807C6.0017 8.06923 6.39733 7.96413 6.70617 8.14333C7.015 8.32253 7.12011 8.71804 6.94091 9.02688ZM6.04309 12.3806C6.04383 12.0234 5.75501 11.7334 5.39795 11.7327C5.0409 11.7319 4.75074 12.0208 4.75 12.3779C4.74927 12.7349 5.03809 13.0249 5.39527 13.0256C5.7522 13.0265 6.04236 12.7376 6.04309 12.3806ZM5.82116 16.3781C5.6433 16.0684 5.74999 15.6734 6.05968 15.4954C6.36925 15.3176 6.7644 15.4244 6.94237 15.734C7.12023 16.0435 7.01342 16.4388 6.70385 16.6165C6.39428 16.7945 5.99902 16.6877 5.82116 16.3781ZM9.39773 18.1882C9.08889 18.0091 8.69338 18.1142 8.51418 18.423C8.33498 18.7319 8.44008 19.1275 8.74892 19.3067C9.05776 19.4858 9.45339 19.3808 9.63259 19.072C9.81179 18.7631 9.70656 18.3674 9.39773 18.1882ZM12.1035 19.7313C12.1043 19.3743 12.3943 19.0855 12.7515 19.0862C13.1084 19.0869 13.3973 19.377 13.3965 19.7341C13.3958 20.0911 13.1057 20.3799 12.7488 20.3792C12.3916 20.3784 12.1028 20.0884 12.1035 19.7313ZM16.1047 18.1869C15.7951 18.3647 15.6883 18.7599 15.8662 19.0695C16.0442 19.3791 16.4392 19.4859 16.7489 19.308C17.0584 19.1302 17.1652 18.735 16.9873 18.4255C16.8095 18.1158 16.4143 18.009 16.1047 18.1869ZM18.559 15.7315C18.7382 15.4227 19.134 15.3177 19.4428 15.4969C19.7516 15.676 19.8566 16.0716 19.6775 16.3804C19.4983 16.6893 19.1027 16.7945 18.7939 16.6153C18.485 16.4361 18.3799 16.0403 18.559 15.7315ZM20.105 11.7327C19.7478 11.7319 19.4578 12.0208 19.457 12.3779C19.4563 12.7349 19.7451 13.0249 20.1022 13.0256C20.4592 13.0265 20.7493 12.7376 20.75 12.3806C20.7507 12.0234 20.4619 11.7334 20.105 11.7327ZM19.679 8.38046C19.8569 8.69003 19.75 9.08529 19.4405 9.26315C19.1309 9.44101 18.7356 9.33432 18.5579 9.02462C18.3799 8.71505 18.4867 8.31991 18.7964 8.14193C19.106 7.96408 19.5011 8.07089 19.679 8.38046ZM16.1022 6.57006C16.4111 6.74926 16.8068 6.64415 16.986 6.33532C17.1652 6.02648 17.06 5.63085 16.7512 5.45165C16.4423 5.27245 16.0467 5.37767 15.8676 5.68651C15.6884 5.99535 15.7934 6.39086 16.1022 6.57006ZM8.26319 12.3795C8.26319 9.90466 10.2761 7.8916 12.75 7.8916C15.2249 7.8916 17.2379 9.90466 17.2379 12.3795C17.2379 14.8534 15.2249 16.8663 12.75 16.8663C10.2761 16.8663 8.26319 14.8534 8.26319 12.3795ZM9.5553 12.3795C9.5553 14.141 10.9885 15.5741 12.75 15.5741C14.5115 15.5741 15.9458 14.141 15.9458 12.3795C15.9458 10.618 14.5115 9.18372 12.75 9.18372C10.9885 9.18372 9.5553 10.618 9.5553 12.3795Z"></path></svg></div></div></div><div class="react-switch-handle" style="height:22px;width:22px;background:#ffffff;display:inline-block;cursor:pointer;border-radius:50%;position:absolute;transform:translateX(1px);top:1px;outline:0;border:0;-webkit-transition:background-color 0.25s, transform 0.25s, box-shadow 0.15s;-moz-transition:background-color 0.25s, transform 0.25s, box-shadow 0.15s;transition:background-color 0.25s, transform 0.25s, box-shadow 0.15s"></div><input type="checkbox" role="switch" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px" id="normal-switch"/></div></label></div><h1>프론트엔드 개발환경 세팅(1)</h1><p class="post-date">July 02, 2023</p><div><h1 id="일지1" style="position:relative;"><a href="#%EC%9D%BC%EC%A7%801" aria-label="일지1 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>일지#1</h1>
 <ul>
-<li>웹 페이지를 렌더링하는방식</li>
+<li>1주 : 이전 강의 정리포스팅, 계획, 섹션0, 섹션1</li>
+<li>라이브러리, 프레임워크에서는 편한방식의 스타트 환경을 제공한다 (CRA, Vue cli)</li>
+<li>하지만 이런 환경구성을 아는 것 vs 모르는 것 차이가 있음</li>
+<li>유능한 프로그래머가 되기 위해 직접 도구를 다루는 법을 배울 예정</li>
+<li>이론 → 실습 (11개의 실습 꼭 따라하기)</li>
 </ul>
-<h3 id="client-side-rendering-csr" style="position:relative;"><a href="#client-side-rendering-csr" aria-label="client side rendering csr permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Client Side Rendering (CSR)</h3>
+<h3 id="오늘-한-것" style="position:relative;"><a href="#%EC%98%A4%EB%8A%98-%ED%95%9C-%EA%B2%83" aria-label="오늘 한 것 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>오늘 한 것</h3>
 <ul>
-<li>클라이언트(브라우저)에서 웹 페이지를 렌더링 하는 것.</li>
-<li>TTI === TTV</li>
-<li>모든 로직, 데이터 가져오기, 템플릿, 라우팅은 서버가 아닌 클라이언트에서 처리</li>
+<li>node.js 설치</li>
+<li>npm 설치</li>
+<li>npm init</li>
+<li>pakage.json 확인</li>
+<li>scripts를 통해 명령어 사용하는 법</li>
+<li>패키지 설치</li>
+<li>유의적 버전</li>
+</ul>
+<h3 id="강의자료" style="position:relative;"><a href="#%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C" aria-label="강의자료 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>강의자료</h3>
+<p><a href="https://jeonghwan-kim.github.io/series/2019/12/09/frontend-dev-env-npm.html#5-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%84%A4%EC%B9%98">프론트엔드 개발환경의 이해: NPM</a></p>
+<h2 id="개인-공부" style="position:relative;"><a href="#%EA%B0%9C%EC%9D%B8-%EA%B3%B5%EB%B6%80" aria-label="개인 공부 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>개인 공부</h2>
+<h3 id="nodejs" style="position:relative;"><a href="#nodejs" aria-label="nodejs permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Node.js?</h3>
+<ul>
+<li>서버에서 사용하는 스크립트 ?</li>
 </ul>
 <blockquote>
-<p>CSR은 js번들 크기의 영향을 많이 받아서 적극적 <code class="language-text">code splitting</code> 을 고려해야한다. (FCP최적화, TTI최적화)</p>
+<p>Node.js는 Chrome V8 JavaScript 엔진 기반의 서버 사이드 JavaScript 런타임</p>
 </blockquote>
-<p>*FCP(First Contentful Paint) - 첫 유용한 콘텐츠</p>
-<p>*FP(First Paint) - 첫 픽셀</p>
-<p>*TTI(Time to Interactive)</p>
-<p>*TTV(Time to View)</p>
-<p><strong>CSR 동작 방식</strong></p>
+<p>Node.js는 <strong>이벤트 기반, 비동기식, 싱글 스레드 모델</strong>을 사용하여 경량화되고 빠르게 동작합니다. 이는 Node.js가 동시에 많은 연결을 처리하면서도 일정한 성능을 유지할 수 있게 합니다. Node.js는 네트워크 애플리케이션 개발과 같이 I/O 작업이 주로 발생하는 상황에서 뛰어난 성능을 보여줍니다.</p>
+<p>⇒ 성능</p>
+<p>또한 Node.js는 npm(Node Package Manager)이라는 패키지 관리자를 통해 다양한 외부 모듈과 라이브러리를 사용할 수 있습니다. 이러한 모듈과 라이브러리는 개발자들이 애플리케이션을 개발하거나 서버를 구축하는 데 도움이 되는 많은 기능을 제공합니다.</p>
+<p>⇒ 패키지 관리</p>
+<p>Node.js는 JavaScript를 사용하여 서버 측 애플리케이션을 개발하고 실행할 수 있게 해주는 강력한 도구입니다. 이를 통해 개발자들은 JavaScript의 유연성과 풍부한 생태계를 활용하여 효율적이고 확장 가능한 서버 애플리케이션을 구축할 수 있습니다.</p>
+<p>⇒ 서버 개발 가능 (확장성)</p>
+<h3 id="프론트엔드-개발자가-nodejs에-대해-알아야-하는-이유" style="position:relative;"><a href="#%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-nodejs%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EC%95%BC-%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0" aria-label="프론트엔드 개발자가 nodejs에 대해 알아야 하는 이유 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>프론트엔드 개발자가 Node.js에 대해 알아야 하는 이유</h3>
 <ol>
-<li>사용자의 웹 페이지 방문 (request)</li>
-<li>
-<p>브라우저는 최소한 HTML 파일을 다운로드 (response)</p>
+<li>서버 사이드 렌더링: Node.js는 서버 측에서 JavaScript를 실행할 수 있는 환경을 제공합니다. 이를 통해 프론트엔드 개발자는 서버 사이드 렌더링을 구현하여 초기 페이지 로딩 속도를 향상시킬 수 있습니다.</li>
+<li>빌드 도구와 자동화: Node.js 기반의 도구들(예: Webpack, Gulp, Grunt)은 프론트엔드 개발에서 필수적인 빌드, 번들링, 테스트, 자동화 작업 등을 처리하는 데 사용됩니다. Node.js를 알고 있으면 이러한 도구를 이해하고 사용할 수 있습니다. ⇒ (이게 본 강의를 듣는 이유인 듯)</li>
+<li>패키지 관리자와 모듈 생태계: Node.js의 패키지 관리자인 npm은 수많은 오픈 소스 모듈과 라이브러리를 제공합니다. 프론트엔드 개발자는 npm을 사용하여 프로젝트에 필요한 외부 모듈을 쉽게 추가하고 관리할 수 있습니다.</li>
+<li>API 개발 및 데이터 처리: Node.js는 웹 API를 개발하기에 적합한 도구입니다. 프론트엔드 개발자는 Node.js를 사용하여 서버 사이드에서 데이터를 처리하고 API를 제공하는 백엔드 서비스를 개발할 수 있습니다.</li>
+<li>전체 스택 개발에 기여: 프론트엔드 개발자가 Node.js를 이해하고 활용할 수 있다면, 전체 스택 개발에서 백엔드 개발자와 협업하거나 필요한 작업을 스스로 수행할 수 있습니다. 이는 프로젝트의 효율성과 생산성을 높일 수 있습니다.</li>
+</ol>
+<p>요약하자면, Node.js를 알고 있는 프론트엔드 개발자는 서버 사이드 렌더링, 빌드 도구와 자동화, 패키지 관리, API 개발 및 전체 스택 개발 등 다양한 측면에서 유리한 경험과 기술을 갖출 수 있습니다.</p>
+<h3 id="프로젝트-초기화" style="position:relative;"><a href="#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%B4%88%EA%B8%B0%ED%99%94" aria-label="프로젝트 초기화 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>프로젝트 초기화</h3>
+<p>개발 프로젝트는 외부 라이브러리를 다운로드 받고 빌드하는 등 일련의 명령어를 자동화하여 프로젝트를 관리하는 도구가 존재한다.</p>
 <ul>
-<li>최소한 HTML(index.html)</li>
+<li>PHP의 컴포져(<a href="https://getcomposer.org/">Composer</a>)</li>
+<li>자바의 그래들(<a href="https://gradle.org/">Gradle</a>)</li>
 </ul>
-<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><span class="token plain-text">
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><span class="token plain-text">
-  &lt;!-- 페이지에 필요한 외부 스타일시트, 스크립트 등의 리소스를 로드하기 위한 태그 -->
-  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>styles.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">
-  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>main.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span class="token plain-text">
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><span class="token plain-text">
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><span class="token plain-text">
-  &lt;!-- 초기에 빈 콘텐츠를 가지고 있을 수도 있습니다. -->
+<p>같은 툴이 그러한 프로그램이다. <strong>NPM은 자바스크립트 기반 프로젝트의 빌드 도구</strong>인 셈이다. NPM을 이용해 프론트엔드 개발 프로젝트를 세팅해 보자.</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token comment">// 프로젝트 초기 생성 명령어</span>
+npm init
 
-  &lt;!-- JavaScript와 데이터를 이용하여 동적으로 콘텐츠를 생성하는 영역 -->
-  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token plain-text">
-    // JavaScript 코드
-    // 데이터 로딩 및 콘텐츠 생성 로직
-  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span class="token plain-text">
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span class="token plain-text">
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre></div>
-</li>
-<li>브라우저는 <code class="language-text">index.html</code>에 있는 js 번들 파일을 다운로드</li>
-<li><code class="language-text">AJAX</code> 를 통해 <code class="language-text">API</code> 요청을 수행해 동적 컨텐츠를 가져오고 파싱 → 최종 컨텐츠 렌더링</li>
-<li>사용자가 페이지를 이동하는 경우, 서버에 추가 <code class="language-text">HTML</code> 파일 요청 없이 이미 받은 자바스크립트를 이용해 렌더링</li>
-</ol>
-<p><strong>CSR 장점</strong></p>
-<ul>
-<li>후속 페이지 로드 시간이 빠름 (이미 모든 스크립트가 사전 로드)</li>
-<li>서버 부하 감소</li>
-<li>서버 호출시 전체 UI 다시 로드할 필요 없음</li>
-</ul>
-<p><strong>CSR 단점</strong></p>
-<ul>
-<li>초기 페이지 로드가 <code class="language-text">SSR</code> 에 비해 느림</li>
-<li>
-<p>SEO에 친화적이지 않음 (검색 엔진 크롤러 방문시 빈 페이지)</p>
-<ul>
-<li>구글 크롤러는 js실행 시키긴 하지만 모든 검색엔진크롤러가 지원하지 않음</li>
-</ul>
-</li>
-<li>처음 HTML, JavaScript 파일 다운, 프레임워크 실행시점에 사용자가 빈 페이지를 봄</li>
-</ul>
-<h3 id="server-side-rendering-ssr" style="position:relative;"><a href="#server-side-rendering-ssr" aria-label="server side rendering ssr permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Server Side Rendering (SSR)</h3>
-<ul>
-<li>서버의 <code class="language-text">HTML</code> 로 렌더링하는 방식</li>
-<li>TTV >>> TTI</li>
-<li>브라우저에서 응답 받기 전 데이터 패칭 및 템플릿 작성이 처리됨</li>
-</ul>
-<p><strong>SSR 동작 방식</strong></p>
+<span class="token comment">// package.json</span>
+<span class="token punctuation">{</span>
+  <span class="token string">"name"</span><span class="token operator">:</span> <span class="token string">"sample"</span><span class="token punctuation">,</span>
+  <span class="token string">"version"</span><span class="token operator">:</span> <span class="token string">"1.0.0"</span><span class="token punctuation">,</span>
+  <span class="token string">"description"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+  <span class="token string">"main"</span><span class="token operator">:</span> <span class="token string">"index.js"</span><span class="token punctuation">,</span>
+  <span class="token string">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">"test"</span><span class="token operator">:</span> <span class="token string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">"author"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+  <span class="token string">"license"</span><span class="token operator">:</span> <span class="token string">"ISC"</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// name: 프로젝트 이름</span>
+<span class="token comment">// version: 프로젝트 버전 정보</span>
+<span class="token comment">// description: 프로젝트 설명</span>
+<span class="token comment">// main: 노드 어플리케이션일 경우 진입점 경로. 프론트엔드 프로젝트일 경우 사용하지 않는다.</span>
+<span class="token comment">// scripts: 프로젝트 명령어를 등록할 수 있다.초기화시 test 명령어가 샘플로 등록되어 있다</span>
+<span class="token comment">// author: 프로그램 작성자</span>
+<span class="token comment">// license: 라이센스</span>
+
+<span class="token comment">//*echo : echo 명령어는 주로 컴퓨터의 터미널이나 명령 프롬프트에서 사용되는 명령어</span></code></pre></div>
+<h3 id="npm의-다양한-명령어-종류" style="position:relative;"><a href="#npm%EC%9D%98-%EB%8B%A4%EC%96%91%ED%95%9C-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A2%85%EB%A5%98" aria-label="npm의 다양한 명령어 종류 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>npm의 다양한 명령어 종류</h3>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">❯ npm -help
+
+Usage: npm &lt;command>
+
+where &lt;command> is one of:
+    access, adduser, audit, bin, bugs, c, cache, ci, cit,
+    clean-install, clean-install-test, completion, config,
+    create, ddp, dedupe, deprecate, dist-tag, docs, doctor,
+    edit, explore, fund, get, help, help-search, hook, i, init,
+    install, install-ci-test, install-test, it, link, list, ln,
+    login, logout, ls, org, outdated, owner, pack, ping, prefix,
+    profile, prune, publish, rb, rebuild, repo, restart, root,
+    run, run-script, s, se, search, set, shrinkwrap, star,
+    stars, start, stop, t, team, test, token, tst, un,
+    uninstall, unpublish, unstar, up, update, v, version, view,
+    whoami</code></pre></div>
+<h3 id="패키지설치" style="position:relative;"><a href="#%ED%8C%A8%ED%82%A4%EC%A7%80%EC%84%A4%EC%B9%98" aria-label="패키지설치 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>패키지설치</h3>
 <ol>
-<li>사용자의 웹 페이지 방문 (request)</li>
-<li>서버는 리소스 확인, 페이지 내 서버측 스크립트 실행 후 <code class="language-text">HTML</code> 컨텐츠를 컴파일 및 준비</li>
-<li>컴파일된 <code class="language-text">HTML</code>은 추가 렌더링 및 표시를 위해 클라이언트(브라우저)로 전송(response)</li>
-<li>브라우저는 <code class="language-text">HTML</code>을 다운하고 사용자가 사이트를 볼 수 있게 함</li>
-<li>브라우저는 자바스크립트를 다운로드하고 실행하면서 <code class="language-text">interactive</code>하게함</li>
-<li>사용자가 페이지를 이동할 때마다 위 동작 반복</li>
-</ol>
-<p><strong>SSR 장점</strong></p>
-<ul>
-<li>초기 페이지 로드시간이 빠름(<code class="language-text">FP</code> 및 <code class="language-text">FCP</code>가 빠르다)</li>
-<li>이미 렌더링이 준비된 <code class="language-text">HTML</code> 파일을 브라우저에서 로드하기 때문에 CSR에 비해 빠름</li>
-<li>서버에서 페이지 로직 및 렌더링을 실행하면서 Js를 클라이언트에 보내지 않아도 됨으로 <code class="language-text">TTI</code>를 빠르게 수행할 수 있다.</li>
-<li><code class="language-text">SEO</code>에 친화적이다.</li>
-</ul>
-<p><strong>SSR 단점</strong></p>
-<ul>
 <li>
-<p>페이지 이동시마다 서버에서 페이지를 생성하는데 시간이 걸리기때문에 <code class="language-text">TTFB</code>가 느리다.</p>
+<p>CDN</p>
 <ul>
-<li>TTFB(Time to First Byte)</li>
-<li>요청 후 첫 바이트 수신 시간</li>
-<li>CSR은 최소한의 <code class="language-text">HTML</code>을 받기에 <code class="language-text">TTFP</code>가 상대적으로 낮음</li>
+<li>간단한 방법은 CDN(컨텐츠 전송 네트워크)으로 제공하는 라이브러리를 직접 가져 오는 방식이다</li>
+</ul>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://unpkg.com/react@16/umd/react.development.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre></div>
+<ul>
+<li>CDN 서버 장애로 인해 외부 라이브러리를 사용할 수 없다면 어떻게 될까? 아무리 우리 어플리케이션 서버가 정상이더라도 필수 라이브러리를 가져오지 못한다면 웹 어플리케이션은 정상적으로 동작하지 않을 것이다.****</li>
 </ul>
 </li>
-<li>서버 호스팅이 필요하다</li>
-<li>CSR에 비해 더 많은 개발 노력이 필요, SSR 프레임워크 사용시 추가 러닝 커브 비용 발생</li>
-</ul>
-<h3 id="static-site-generatorssg" style="position:relative;"><a href="#static-site-generatorssg" aria-label="static site generatorssg permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Static Site Generator(SSG)</h3>
+<li>
+<p>직접 다운로드</p>
 <ul>
-<li>SSR처럼 서버로 부터 완성된 HTML을 받아옴.</li>
-<li>차이는 HTML 파일의 생성시점이 빌드타임이다.</li>
-<li>Static이라는 용어는 HTML이 정적이라는 것이지 페이지가 정적인 것은 아님</li>
-<li>Next.js에서 권장하는 렌더링 방식</li>
+<li>CDN을 사용하지 않기 때문에 장애와 독립적으로 웹 어플리케이션을 제공할 수 있을 것같다.</li>
+<li>라이브러리는 계속해서 업데이트 될 것이고 우리 프로젝트에서도 최신 버전으로 교체해야 한다. 매번 직접 다운로드하는 것은 매우 귀찮은 일이 될 것이다. 버전에 따라 하위 호환성 여부까지 확인하려면 실수할 여지가 많다.</li>
 </ul>
-<p><strong>SSG 동작 방식</strong></p>
-<ol>
-<li>사용자의 웹 페이지 방문 (request)</li>
-<li>엣지 캐싱(edge caching)된 HTML을 클라이언트로 반환</li>
-<li>브라우저는 HTML을 다운로드하고 최종 사용자가 사이트를 보게함</li>
-</ol>
+</li>
+<li>
+<p>NPM</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx">npm install react
+
+<span class="token comment">// package.json</span>
+<span class="token string">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+   <span class="token string">"react"</span><span class="token operator">:</span> <span class="token string">"18.2.0"</span>
+ <span class="token punctuation">}</span></code></pre></div>
+</li>
+<li>
+<p>유의적버전<a href="https://semver.org/lang/ko/">(Sementic Version)</a></p>
+<p>유의적 버전은 주(Major), 부(Minor), 수(Patch) 세 가지 숫자를 조합해서 버전을 관리한다. 위에 설치한 react의 버전은 v18.2.0인데 주 버전이 18, 부 버전이 2, 수 버전이 0인 셈이다.</p>
+<p>각 버전을 변경하는 기준은 다음과 같다</p>
+<ul>
+<li>주 버전(Major Version): 기존 버전과 호환되지 않게 변경한 경우</li>
+<li>부 버전(Minor version): 기존 버전과 호환되면서 기능이 추가된 경우</li>
+<li>수 버전(Patch version): 기존 버전과 호환되면서 버그를 수정한 경우</li>
+</ul>
+</li>
+<li>
+<p>버전의 범위</p>
+<ul>
+<li>가장 단순한 것이 특정 버전을 사용하는 경우다.</li>
+</ul>
+<p><code class="language-text">1.2.3</code></p>
+<ul>
+<li>특정 버전보다 높거나 낮을 경우는 다음과 같이 명시한다.</li>
+</ul>
+<p>`>1.2.3</p>
 <blockquote>
-<p>엣지 캐싱(edge caching)?
-사용자에게 더 가까운 컨텐츠를 저장하기 위해 캐싱 서버를 사용하는 것
-대표 : CDN</p>
+<p>=1.2.3
+&#x3C;1.2.3
+&#x3C;=1.2.3`</p>
 </blockquote>
-<p><strong>SSG 장점</strong></p>
 <ul>
-<li>빌드타임에 HTML 파일이 생성되기 때문에 빠른 FP,FCP,TTI를 제공</li>
-<li>매 요청마다 생성하는 것이 아니므로, SSR과 달리 일관성 있게 빠른 TFB달성</li>
-<li>이미 생성된 HTML파일을 받아서 SEO에 친화적</li>
+<li>틸드(~)와 캐럿(^)을 이용해 범위를 명시한다.</li>
 </ul>
-<p><strong>SSG 단점</strong></p>
+<p><code class="language-text">~1.2.3 ^1.2.3</code></p>
+<p><strong><a href="https://docs.npmjs.com/misc/semver#tilde-ranges-123-12-1">틸트(~)</a></strong> 는 마이너 버전이 명시되어 있으면 패치버전만 변경한다. 예를 들어 ~1.2.3 표기는 1.2.3 부터 1.3.0 미만 까지를 포함한다. 마이너 버전이 없으면 마이너 버전을 갱신한다. ~0 표기는 0.0.0부터 1.0.0 미만 까지를 포함한다.</p>
+<p><strong><a href="https://docs.npmjs.com/misc/semver#caret-ranges-123-025-004">캐럿(^)</a></strong> 은 정식버전에서 마이너와 패치 버전을 변경한다. 예를 들어 ^1.2.3 표기는 1.2.3부터 2.0.0 미만 까지를 포함한다. 정식버전 미만인 0.x 버전은 패치만 갱신한다. ^0 표기는 0.0.0부터 0.1.0 미만 까지를 포함한다.</p>
+<p>보통 라이브러리 정식 릴리즈 전에는 패키지 버전이 수시로 변한다. 0.1에서 0.2로 부버전이 변하더라도 하위 호환성을 지키지 않고 배포하는 경우가 빈번하다. ~0로 버전 범위를 표기한다면 0.0.0부터 1.0.0미만까지 사용하기 때문에 하위 호완성을 지키지 못하는 0.2로도 업데이트 되어버리는 문제가 생길수 있다.</p>
+<p>반면 캐럿을 사용해 ^0.0으로 표기한다면 0.0.0부터 0.1.0 미만 내에서만 버전을 사용하도록 제한한다. 따라서 하위 호완성을 유지할 수 있다. (자세한 내용은 <a href="https://blog.outsider.ne.kr/1041">여기</a>를 참고)</p>
+<p>NPM으로 패키지를 설치하면 package.json에 설치한 버전을 기록하는데 캐럿 방식을 이용한다. 초기에는 버전 범위에 틸트를 사용하다가 캐럿을 도입해서 기본 동작으로 사용했다. 그래서 우리가 설치한 react는 ^16.12.0 표기로 버전 범위를 기록한 것이다.</p>
 <ul>
-<li>모든 URL에 대해 개별 HTML 파일을 생성해야한다.</li>
-<li>URL을 미리 예측할 수 없으면 적용이 어려움</li>
+<li><a href="https://blog.outsider.ne.kr/1041">읽을 자료</a></li>
 </ul>
-<p><strong>SSR vs SSG</strong></p>
-<ul>
-<li>SSR은 SSG에서 가능한 것보다 더 많은 “실시간”데이터를 가져와 보다 완전한 요청에 대한 응답을 하는 것이다.</li>
-<li>속도는 SSG가 빠름.</li>
-<li>따라서 필요한 경우에만 SSR을 사용</li>
-</ul>
-<h3 id="universal-rendering" style="position:relative;"><a href="#universal-rendering" aria-label="universal rendering permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Universal Rendering</h3>
-<ul>
-<li>SSR을 통해 빠른 FCP를 구현한 다음 클라이언트에서 rehydration이라는 기술을 통해 다시 렌더링하는 방식.</li>
-<li>초기로딩시 SSR / 그 이후에 CSR로 작동</li>
-</ul>
-<p><strong>Universal Rendering 장점</strong></p>
-<ul>
-<li>SSR을 통해 빠른 FCP를 구현함으로 CSR의 단점 개선</li>
-</ul>
-<p><strong>Universal Rendering 단점</strong></p>
-<ul>
-<li>별도의 서버 필요, 러닝커버 비용 큼</li>
-</ul>
-<h3 id="incremental-static-regeneration-isr" style="position:relative;"><a href="#incremental-static-regeneration-isr" aria-label="incremental static regeneration isr permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Incremental Static Regeneration (ISR)</h3>
-<ul>
-<li>런타임 중에 정적 페이지를 만들거나 업데이트 할 수 있도록 해주는 SSG와 SSR의 하이브리드 솔루션</li>
-<li>Next.js에서 제공하는 기능이기도 하며, 전체 사이트를 다시 빌드할 필요없이 페이지별로 정적생성 사용가능하게 해줌</li>
-</ul>
-<p><strong>ISR 동작 방식</strong></p>
-<ol>
-<li>사용자의 웹 페이지 방문 (request)</li>
-<li>
-<p>요청에 의해 페이지가 npm생성되지만 SSR과 달리 즉시 대체 페이지(fallback page)가 제공됨</p>
-<ol>
-<li>placeholder 및 스캘래톤 표시</li>
-</ol>
 </li>
-<li>데이터가 확인되면 최종 페이지가 캐시되고 사용자는 SSG와 마찬가지로 캐시된 버전의 페이지를 받음</li>
-<li>재검증시에도 사용자는 먼저 캐시된 버전을 받고 업데이트된 버전을 받는다.</li>
-</ol>
-<p><strong>ISR 장점</strong></p>
-<ul>
-<li>SSR과 달리 페이지가 즉시 제공(fallback page), 좋은 사용자경험</li>
-</ul>
-<p><strong>ISR 단점</strong></p>
-<ul>
-<li>페이지 디자인에 따라 첫번째 의미있는 페인팅을 지연시킬 수도 있다.</li>
-</ul>
-<p><a href="https://velog.io/@wiostz98kr/SSR-CSR-SSG-TTV-TTI-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC">SSR, CSR, SSG, TTV, TTI 개념 정리</a></p></div><div class="social-share"><a class="resp-sharing-button__link" href="#" rel="noopener" aria-label="Share on Twitter"><div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"></path></svg></div><span class="service-label">Share on Twitter</span></div></a></div><hr class="custom-hr"/><div class="bio"><div class="author"><div class="author-description"><div class="author-image gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:72px;height:72px;border-radius:100%"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEoklEQVQ4yxXG608aBwAA8Pszln1csq5JW6o8RETb0aqlxaJYHT7wASJwvI43nIhwB3c8jjvueMMBghRj10k313atbRfnli3LulZnnOna1Gzdh+6RbH/CXPL78AMWF0c1c3ITqMBQMIrq8ZDWqB9d0I46nepLA5d7LvSJ+npPdPeJu3pFXWJRT1/vxPS4XjftXzIDsG0eMmmmJxTLHjsKOyMrNtiltugmbZBBIBJyu/kneCJBp5DPFwm6xcJOAV+pHNPp5o2gGvDAkzaHHknKmLKaqVhiGU2a1cGREU9ojNvNO805e4bLOdPJOcc9rxySwKphQRdPcqVfp53N0wkAQxYdtsnq2gRdlzJ1ab4lK63L2Q1FdWNMb5ZwuGc7+BzD5NW5sUGPdpQ0Kh2a0ZBXTaV8etMUkGlcoRsDBHuJrEgza9JiS15uKgr1keLqjZPESTmkGiQd01lYm3BqKJeGRcCQaQo0++7cKQNoQYCXhNFiL1HsJ0qXk8UBMi+lWSldlqWrI6mKDDXLY6Yp2rtIuRdw+0zaMzMq/dAAraytbwORbDeW70EYUTgtjuTEWO4ynu6PZ67+L3fdG79oXRH6FwejxomAadYzKzPc+HBgUBbCMsVqG8DyYjTTg6Z7kLQwnhukSzeY8jBByanCcKaqIPLX8KI4VZYx4cDUR5P8s6c6OR0WZyhOVshsCwhlz53Ay5woy6FrktLaMJGWbLWg3YfBnfveXEVBlvvIgiqCMRBkuyi5MrtgjSYKeJJNpFuALzACea/6QlKLT2jxdkXi0gXLe4tGgVbPTyavt5rzCMOLpSyRcNbjC8QSDE4UIvF8AMuGkxWAztoSpDWWsEej7kDQCTlloI+rmDl9rued61MchvLYnXM+2I9GMv5AHMHSWJINYhlXgFzCykAw27GS7UCzPCR1YZmUILRY45YMjguuKbuWEGWcBrGYDos6kDATxnNxsppkVv0IbV9mYLwKwBTPR3TBqY4l5jxS6EAKp1M5txHSx9PkJ5+2U4VZmDqF54bwWCFKlKNJlsmueQK0C2XDqQ0gQHNDaaEH57iRTqf7TLEC/vj85b27D+7ee/Loybc/PXv6aLfG1qEUXSNS9ThVJelV+xLlDBY8KAt4bN2Wcb5BzrcMCcJ65eHe8fO9t98/3G3X2e327YMfXvxx/Nf+Zo1O5mNUg6AbEaJihSlXKOfFWOBeFfp1O32wRbzaqRz/8vrFy7/3nr15XLtZDkANHHyUQR6XEh6lFFnGo2QjmqwGY+U5g9+HsjBeB5qtejAczCbR14c/vzr+d//5b3t7v281Ngo2dX0ZXPVoK37QpJpzuTAsWkTCGRecuDakgrxJiv0C6G++eXf5c7r51dHRn0cv/tnbf7u7c3CzdqvgMKy6DWwA2sQdeTQYWYlTsbQZdIIG14WLQ8NKky1YBmbuH8xvvQmUHrcr1e315ne7h+3bOyqVNhTxZRzGlGnaPzf2/ge8qlf7MAXfDFkpSB03zztnJ8Zn3MDHT/fXvz4Ck5tfrjKbpL+M49/sHBJEBa3cXtt4UM/XkCApkEwn7JbmiukWam5j1s+i1jthkHEb/gP1vkIGzK1HqAAAAABJRU5ErkJggg==" alt="thinkanddoit" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/911742e24bdee98c4be30d0adfe2cb7d/e5b88/profile.png 1x,
+</ol></div><div class="social-share"><a class="resp-sharing-button__link" href="#" rel="noopener" aria-label="Share on Twitter"><div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"></path></svg></div><span class="service-label">Share on Twitter</span></div></a></div><hr class="custom-hr"/><div class="bio"><div class="author"><div class="author-description"><div class="author-image gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:72px;height:72px;border-radius:100%"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEoklEQVQ4yxXG608aBwAA8Pszln1csq5JW6o8RETb0aqlxaJYHT7wASJwvI43nIhwB3c8jjvueMMBghRj10k313atbRfnli3LulZnnOna1Gzdh+6RbH/CXPL78AMWF0c1c3ITqMBQMIrq8ZDWqB9d0I46nepLA5d7LvSJ+npPdPeJu3pFXWJRT1/vxPS4XjftXzIDsG0eMmmmJxTLHjsKOyMrNtiltugmbZBBIBJyu/kneCJBp5DPFwm6xcJOAV+pHNPp5o2gGvDAkzaHHknKmLKaqVhiGU2a1cGREU9ojNvNO805e4bLOdPJOcc9rxySwKphQRdPcqVfp53N0wkAQxYdtsnq2gRdlzJ1ab4lK63L2Q1FdWNMb5ZwuGc7+BzD5NW5sUGPdpQ0Kh2a0ZBXTaV8etMUkGlcoRsDBHuJrEgza9JiS15uKgr1keLqjZPESTmkGiQd01lYm3BqKJeGRcCQaQo0++7cKQNoQYCXhNFiL1HsJ0qXk8UBMi+lWSldlqWrI6mKDDXLY6Yp2rtIuRdw+0zaMzMq/dAAraytbwORbDeW70EYUTgtjuTEWO4ynu6PZ67+L3fdG79oXRH6FwejxomAadYzKzPc+HBgUBbCMsVqG8DyYjTTg6Z7kLQwnhukSzeY8jBByanCcKaqIPLX8KI4VZYx4cDUR5P8s6c6OR0WZyhOVshsCwhlz53Ay5woy6FrktLaMJGWbLWg3YfBnfveXEVBlvvIgiqCMRBkuyi5MrtgjSYKeJJNpFuALzACea/6QlKLT2jxdkXi0gXLe4tGgVbPTyavt5rzCMOLpSyRcNbjC8QSDE4UIvF8AMuGkxWAztoSpDWWsEej7kDQCTlloI+rmDl9rued61MchvLYnXM+2I9GMv5AHMHSWJINYhlXgFzCykAw27GS7UCzPCR1YZmUILRY45YMjguuKbuWEGWcBrGYDos6kDATxnNxsppkVv0IbV9mYLwKwBTPR3TBqY4l5jxS6EAKp1M5txHSx9PkJ5+2U4VZmDqF54bwWCFKlKNJlsmueQK0C2XDqQ0gQHNDaaEH57iRTqf7TLEC/vj85b27D+7ee/Loybc/PXv6aLfG1qEUXSNS9ThVJelV+xLlDBY8KAt4bN2Wcb5BzrcMCcJ65eHe8fO9t98/3G3X2e327YMfXvxx/Nf+Zo1O5mNUg6AbEaJihSlXKOfFWOBeFfp1O32wRbzaqRz/8vrFy7/3nr15XLtZDkANHHyUQR6XEh6lFFnGo2QjmqwGY+U5g9+HsjBeB5qtejAczCbR14c/vzr+d//5b3t7v281Ngo2dX0ZXPVoK37QpJpzuTAsWkTCGRecuDakgrxJiv0C6G++eXf5c7r51dHRn0cv/tnbf7u7c3CzdqvgMKy6DWwA2sQdeTQYWYlTsbQZdIIG14WLQ8NKky1YBmbuH8xvvQmUHrcr1e315ne7h+3bOyqVNhTxZRzGlGnaPzf2/ge8qlf7MAXfDFkpSB03zztnJ8Zn3MDHT/fXvz4Ck5tfrjKbpL+M49/sHBJEBa3cXtt4UM/XkCApkEwn7JbmiukWam5j1s+i1jthkHEb/gP1vkIGzK1HqAAAAABJRU5ErkJggg==" alt="thinkanddoit" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/911742e24bdee98c4be30d0adfe2cb7d/e5b88/profile.png 1x,
 /static/911742e24bdee98c4be30d0adfe2cb7d/e7bd6/profile.png 1.5x,
 /static/911742e24bdee98c4be30d0adfe2cb7d/a12fc/profile.png 2x" /><img loading="lazy" width="72" height="72" srcset="/static/911742e24bdee98c4be30d0adfe2cb7d/e5b88/profile.png 1x,
 /static/911742e24bdee98c4be30d0adfe2cb7d/e7bd6/profile.png 1.5x,
@@ -249,4 +233,4 @@
  🗣 스몰톡을 좋아합니다.
  ☕️ 커피를 좋아합니다.
  ⚽️ 축구를 좋아합니다.
-</div><p class="author-socials"><a href="https://github.com/thinkanddoit">GitHub</a><a href="https://velog.io/@thinkanddoit">Velog</a><a href="/about">Resume</a></p></div></div></div></div><ul class="navigator"><li><a rel="prev" href="/글또/javascript-this에-대해서/">← <!-- -->JavaScript this에 대해서</a></li><li><a rel="next" href="/글또/프론트엔드-개발환경-세팅(1)/">프론트엔드 개발환경 세팅(1)<!-- --> →</a></li></ul><div class="utterances"></div><footer class="footer">©<a href="https://github.com/thinkanddoit">thinkanddoit</a>, Built with<!-- --> <a href="https://github.com/JaeYeopHan/gatsby-starter-bee">Gatsby-starter-bee</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/글또/csr-vs-ssr-vs-ssg-차이-정리/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-10ab6ae954fcc3dc18b2.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-38fe08ef875e5952d5f0.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-ea37a1edbda4c4f8e378.js"],"component---src-pages-404-js":["/component---src-pages-404-js-ab1d14d8fe8d5f781253.js"],"component---src-pages-about-js":["/component---src-pages-about-js-227c7b285bf560c94bb0.js"],"component---src-pages-index-js":["/component---src-pages-index-js-decd778f4fae299def00.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-js-ea37a1edbda4c4f8e378.js" async=""></script><script src="/69ca9dfa785447e3d8b116b383997bcdc8df623a-d6afe8c09a88c9bf3650.js" async=""></script><script src="/4213a708e3c149581c4f5e97d71bfc3d00067ec6-fb3977cb0c11110241b5.js" async=""></script><script src="/428cc97b99dda93b6f894a0194db3c3a0ab8bbd5-b9cdbc495dc2d8ef3640.js" async=""></script><script src="/styles-9605c3fbd8ad08ecf405.js" async=""></script><script src="/app-10ab6ae954fcc3dc18b2.js" async=""></script><script src="/framework-727eca7a674e10b21a9f.js" async=""></script><script src="/webpack-runtime-f1c6ea257a164567f6d9.js" async=""></script></body></html>
+</div><p class="author-socials"><a href="https://github.com/thinkanddoit">GitHub</a><a href="https://velog.io/@thinkanddoit">Velog</a><a href="/about">Resume</a></p></div></div></div></div><ul class="navigator"><li><a rel="prev" href="/글또/csr-vs-ssr-vs-ssg-차이-정리/">← <!-- -->CSR vs SSR vs SSG 차이 정리</a></li><li></li></ul><div class="utterances"></div><footer class="footer">©<a href="https://github.com/thinkanddoit">thinkanddoit</a>, Built with<!-- --> <a href="https://github.com/JaeYeopHan/gatsby-starter-bee">Gatsby-starter-bee</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/글또/프론트엔드-개발환경-세팅(1)/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-10ab6ae954fcc3dc18b2.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-38fe08ef875e5952d5f0.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-ea37a1edbda4c4f8e378.js"],"component---src-pages-404-js":["/component---src-pages-404-js-ab1d14d8fe8d5f781253.js"],"component---src-pages-about-js":["/component---src-pages-about-js-227c7b285bf560c94bb0.js"],"component---src-pages-index-js":["/component---src-pages-index-js-decd778f4fae299def00.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-js-ea37a1edbda4c4f8e378.js" async=""></script><script src="/69ca9dfa785447e3d8b116b383997bcdc8df623a-d6afe8c09a88c9bf3650.js" async=""></script><script src="/4213a708e3c149581c4f5e97d71bfc3d00067ec6-fb3977cb0c11110241b5.js" async=""></script><script src="/428cc97b99dda93b6f894a0194db3c3a0ab8bbd5-b9cdbc495dc2d8ef3640.js" async=""></script><script src="/styles-9605c3fbd8ad08ecf405.js" async=""></script><script src="/app-10ab6ae954fcc3dc18b2.js" async=""></script><script src="/framework-727eca7a674e10b21a9f.js" async=""></script><script src="/webpack-runtime-f1c6ea257a164567f6d9.js" async=""></script></body></html>
